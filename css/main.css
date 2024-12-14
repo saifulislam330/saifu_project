@@ -1,0 +1,147 @@
+
+body {
+    margin: 0;
+    overflow: hidden;
+  }
+
+  #map {
+    height: 100vh;
+  }
+
+  /* Sidebar Styling */
+  .sidebar {
+    background: #f8f9fa;
+    height: 100%;
+    overflow-y: auto;
+    border-right: 1px solid #ddd;
+  }
+
+  .sidebar-item {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+  }
+
+  .sidebar-item:hover {
+    background-color: #e9ecef;
+  }
+
+  .sidebar-footer {
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    color: #6c757d;
+  }
+
+  .sidebar-footer a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  .sidebar-footer a:hover {
+    text-decoration: underline;
+  }
+
+.custom_profile{
+    width: 200px;
+   
+    background-color: green;
+}
+.profile-card {
+    width: 200px;
+    background: white;
+    /* border-radius: 10px; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  .profile-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  .profile-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .profile-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+
+  .profile-card .location {
+    font-size: 12px;
+    color: #999;
+  }
+.input_location{
+    width: 50px;
+}
+.customall{
+    width: 300px;
+    background-color: #eadede;
+}
+.settings-container {
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 10px;
+  }
+
+  .settings-container h2 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .settings-item {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .toggle-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Custom Toggle Switch - Red and White */
+  .form-check-input.red-white-toggle {
+    width: 40px;
+    height: 20px;
+    background-color: #ddd; /* Default switch background */
+    border-radius: 10px;
+    appearance: none;
+    -webkit-appearance: none;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .form-check-input.red-white-toggle:checked {
+    background-color: red; /* Switch background when active */
+  }
+
+  .form-check-input.red-white-toggle:checked::before {
+    transform: translateX(20px);
+  }
+
+  .form-check-input.red-white-toggle::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: white; /* Toggle knob color */
+    border-radius: 50%;
+    transition: transform 0.3s;
+  }
